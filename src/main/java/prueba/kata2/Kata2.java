@@ -15,7 +15,7 @@ import java.util.HashMap;
 public class Kata2 {
     
     public static void main(String[] args) {
-        int[] data = {0, 1, 2, 0, 2, 3, 1, 4, 5, 6, 7, 5, 7, 2};
+        Integer[] data = {0, 1, 2, 0, 2, 3, 1, 4, 5, 6, 7, 5, 7, 2};
         Histogram hist = new Histogram(data);
         Map<Integer, Integer> histogr = hist.getHistogram();
         
