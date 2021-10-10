@@ -15,11 +15,11 @@ import java.util.HashMap;
 public class Kata2 {
     
     public static void main(String[] args) {
-        Integer[] data = {0, 1, 2, 0, 2, 3, 1, 4, 5, 6, 7, 5, 7, 2};
+        String[] data = {"a", "b", "a", "z", "b", "a"};
         Histogram hist = new Histogram(data);
-        Map<Integer, Integer> histogr = hist.getHistogram();
+        Map<String, Integer> histogr = hist.getHistogram();
         
-        for (int key : histogr.keySet()) {
+        for (String key : histogr.keySet()) {
             System.out.println(key + "\t==>\t" + histogr.get(key));
         }
         
